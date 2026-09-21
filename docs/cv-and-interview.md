@@ -6,9 +6,11 @@ Implemented and tested a 2 MHz DSSS-BPSK laboratory link based on a published QE
 
 ## Software-extension CV bullet
 
-Extended the hardware study into a Python/MATLAB DSSS simulation suite covering BER, interference, synchronization, multipath and receiver impairments; validated the Python model against BPSK theory and deterministic tests, with reproducible datasets and plots.
+Extended the hardware study into a Python/MATLAB-compatible DSSS simulation suite covering BER, interference, synchronization, multipath and receiver impairments; validated 17 Python tests and GNU Octave execution through GitHub Actions, with reproducible datasets and plots.
 
-Until the MATLAB runtime checks pass, do not claim that both language implementations have been validated. Replace the general test wording with a numeric test count only while the current suite still supports it. Add the repository URL once publication is confirmed.
+Repository: https://github.com/MAbuain17/dsss-lab
+
+Do not claim native MATLAB validation until the manual workflow passes under MathWorks MATLAB. The current evidence supports Python and GNU Octave validation.
 
 ## Explain the engineering decisions
 
@@ -20,4 +22,4 @@ Until the MATLAB runtime checks pass, do not claim that both language implementa
 
 **Why test out-of-band interference?** It reveals a real limitation: widening the receiver's admitted spectrum can expose it to interference that a narrow unspread receiver largely rejects. Processing gain is conditional on the interference and receiver model.
 
-**What is incomplete?** Native MATLAB/Octave validation, rerunning Multisim, a fully connected/routed PCB, independent hardware timing recovery and new controlled hardware BER tests.
+**What is incomplete?** Native MATLAB validation, rerunning Multisim, a fully connected/routed PCB, independent hardware timing recovery and new controlled hardware BER tests.

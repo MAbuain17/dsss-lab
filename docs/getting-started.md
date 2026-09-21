@@ -43,7 +43,7 @@ To run the same tests with GNU Octave:
 octave --no-gui --quiet --eval "addpath('matlab'); test_dsss; run_experiments('results/matlab',4000); advanced_demo('results/matlab');"
 ```
 
-Octave and native MATLAB runs are pending at the initial release. Treat the supplied `.m` files as ready for that validation, not as already executed results.
+The GNU Octave command above passes in the published GitHub Actions workflow. Native MathWorks MATLAB execution remains pending and must be validated separately before claiming full MATLAB-runtime parity.
 
 ## Change one thing at a time
 

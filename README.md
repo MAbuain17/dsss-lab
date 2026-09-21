@@ -2,6 +2,8 @@
 
 **A 2 MHz hardware demonstration, extended into a reproducible Python and MATLAB communications laboratory.**
 
+[![Validate DSSS models](https://github.com/MAbuain17/dsss-lab/actions/workflows/validate.yml/badge.svg)](https://github.com/MAbuain17/dsss-lab/actions/workflows/validate.yml)
+
 I built and tested a direct-sequence spread-spectrum (DSSS) link as an individual university project, following André Kesteloot's design in *QEX*, December 1986. This repository brings together my Multisim files, laboratory photographs, original report, and a new software study of the link's behaviour under noise, interference and receiver impairments.
 
 ![DSSS hardware in the university laboratory](assets/lab-15.jpg)
@@ -45,7 +47,7 @@ run_experiments('results/matlab', 12000);
 advanced_demo('results/matlab');
 ```
 
-MATLAB shares deterministic test vectors with Python. Random-number streams differ, so Monte Carlo results should agree statistically, not bit-for-bit. **The Python suite has been executed locally. MATLAB and GNU Octave execution is pending**; workflows are included to perform those checks after publication.
+MATLAB shares deterministic test vectors with Python. Random-number streams differ, so Monte Carlo results should agree statistically, not bit-for-bit. **Python and GNU Octave pass the published GitHub Actions validation workflow. Native MATLAB execution remains pending** and is kept as a separate manual workflow.
 
 ## What the software explores
 

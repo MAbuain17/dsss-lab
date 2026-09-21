@@ -1,10 +1,10 @@
 # Maintenance and research roadmap
 
-Version 0.1 establishes the models, evidence and validation gates. Changes should include a test of the claimed behaviour and regenerated results whenever measurement code changes. GitHub Actions checks Python and GNU Octave on pushes and pull requests; native MATLAB validation is a separate manual workflow.
+Version 0.1 establishes the models, evidence and validation gates. Changes should include a test of the claimed behaviour and regenerated results whenever measurement code changes. GitHub Actions checks Python and GNU Octave on pushes and pull requests; both jobs first passed after publication on 21 September 2026. Native MATLAB validation remains a separate manual workflow.
 
 | Priority | Work item | Definition of done |
 |---|---|---|
-| P0 | Execute MATLAB and Octave suites | Golden-vector parity, CRC and statistical checks pass; record runtime versions and logs |
+| P0 | Execute native MATLAB suite | Golden-vector parity, CRC and statistical checks pass under MathWorks MATLAB; record the runtime release and logs |
 | P0 | Rerun original Multisim model | Export current netlist, operating points and labelled waveforms; reconcile report and as-built component list |
 | P1 | Hardware-equivalent acquisition model | Explicit doubled-clock phase search, latch behaviour, initial phases and timing assumptions; compare with lab capture |
 | P1 | Complete PCB schematic | Verified pin map, logic margins, bias and power circuits; clean ERC |
