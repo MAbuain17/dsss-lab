@@ -1,6 +1,13 @@
 name: Native MATLAB validation
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'matlab/**'
+      - 'tests/golden_*.csv'
+      - '.github/workflows/matlab.yml'
 permissions:
   contents: read
 jobs:
