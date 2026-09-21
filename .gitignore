@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.DS_Store
+*.log
+*.kicad_prl
+*-backups/
+results/matlab/
+results/ci/
+*.asv

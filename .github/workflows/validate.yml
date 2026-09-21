@@ -1,0 +1,35 @@
+name: Validate DSSS models
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e .
+      - run: python -m unittest discover -s tests -v
+      - run: python examples/burst_link.py
+      - run: python -m dsss_lab.experiments --quick --output results/ci
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: python-experiment-results
+          path: results/ci
+  octave:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends octave
+      - run: octave --no-gui --quiet --eval "addpath('matlab'); test_dsss; run_experiments('results/matlab',4000); advanced_demo('results/matlab');"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: octave-experiment-results
+          path: results/matlab

@@ -1,0 +1,4 @@
+ebn0_db,trials,correct_joint_estimates,success_rate,mean_absolute_delay_error_samples,preamble_bits,search_delay_samples,cfo_grid_count
+-5,100,47,0.47,8.83,16,64,3
+0,100,97,0.97,0.0,16,64,3
+5,100,100,1.0,0.0,16,64,3

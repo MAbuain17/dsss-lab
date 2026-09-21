@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Run MATLAB and Octave validation",
+    "body": "Execute test_dsss and both experiment runners, verify Python golden vectors, and record runtime versions. Do not mark MATLAB validated before the execution succeeds."
+  },
+  {
+    "title": "Export and reconcile the original Multisim netlist",
+    "body": "Open DSSS_MAbuain.ms14 in Multisim 14, export the netlist and BOM, capture labelled waveforms, and reconcile comparator and logic-family differences with QEX and the report."
+  },
+  {
+    "title": "Complete electrical schematic before PCB layout",
+    "body": "Use hardware/audit/pcb-review.md. Resolve logic thresholds, clock-switch timing, reset, demodulator bias, unused pins and test points. Require ERC before routing."
+  },
+  {
+    "title": "Add off-grid CFO acquisition and timing tracking",
+    "body": "Extend the grid acquisition with a justified estimator and loop. Test acquisition detection/false alarm and residual offset across an explicit operating range."
+  }
+]

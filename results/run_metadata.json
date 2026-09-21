@@ -1,0 +1,11 @@
+{
+  "seed": 20260920,
+  "quick": false,
+  "awgn_bits_per_point": 60000,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "model": "discrete-time complex baseband, Eb=1, rectangular pulses",
+  "hardware_measurements": false
+}

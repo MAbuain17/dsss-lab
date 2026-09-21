@@ -1,0 +1,15 @@
+{
+  "board_footprints": 169,
+  "board_tracks": 0,
+  "board_vias": 0,
+  "board_zones": 2,
+  "declared_nets": 26,
+  "pads": 532,
+  "pads_with_nonzero_net": 112,
+  "schematic_wires": 0,
+  "schematic_placed_symbols": 10,
+  "erc_run": false,
+  "drc_run": false,
+  "fabrication_ready": false,
+  "reason": "No routed tracks and no schematic wires; user confirms conceptual placement study."
+}

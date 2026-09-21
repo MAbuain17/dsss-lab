@@ -1,0 +1,12 @@
+{
+  "python_tests_passed": 17,
+  "python_full_experiments_executed": true,
+  "python_burst_crc_demo_passed": true,
+  "python_pulse_shaping_executed": true,
+  "markdown_links_checked": true,
+  "matlab_executed": false,
+  "octave_executed": false,
+  "multisim_rerun": false,
+  "kicad_erc_drc_run": false,
+  "fabrication_ready": false
+}
