@@ -4,8 +4,9 @@
 
 - Published the complete project repository with source code, evidence, datasets and generated figures.
 - Passed the Python and GNU Octave jobs in GitHub Actions and retained both result artifacts.
+- Passed the native MathWorks MATLAB workflow and retained its generated result artifact.
 - Updated GitHub-maintained actions to Node.js 24-compatible major versions.
-- Kept native MathWorks MATLAB validation explicitly pending.
+- Scoped automatic native MATLAB runs to relevant implementation, vector and workflow changes.
 
 ## 0.1.0 — initial software extension
 

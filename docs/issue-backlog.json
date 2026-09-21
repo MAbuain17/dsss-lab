@@ -1,9 +1,5 @@
 [
   {
-    "title": "Run native MATLAB validation",
-    "body": "Execute test_dsss and both experiment runners under MathWorks MATLAB, verify the shared Python golden vectors, and record the MATLAB release and logs. GNU Octave CI already passes; do not mark native MATLAB validated before this execution succeeds."
-  },
-  {
     "title": "Export and reconcile the original Multisim netlist",
     "body": "Open DSSS_MAbuain.ms14 in Multisim 14, export the netlist and BOM, capture labelled waveforms, and reconcile comparator and logic-family differences with QEX and the report."
   },
